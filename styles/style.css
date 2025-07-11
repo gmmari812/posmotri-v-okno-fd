@@ -113,7 +113,6 @@ ol {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline #fff;
-  text-underline-offset: 5px;
 
 }
 
@@ -200,7 +199,7 @@ ol {
 
 .button:hover {
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 1px;
 }
 
 .button:focus {
@@ -247,16 +246,20 @@ ol {
   flex-direction: column;
   position: relative;
   overflow-y: auto;
-  block-size: 298px;
+  max-block-size: 298px;
 }
 
-.contant__list {
+.content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.content__list-item:not(:last-child) {
+.content__list_item {
+  max-block-size: 390px;
+}
+
+.content__list-item:last-child {
   margin-bottom: 30px;
 }
 
@@ -265,18 +268,13 @@ ol {
   text-decoration: none;
 }
 
-.content__card-link:active {
-  background-color: #545050;
-}
-
+.content__card-link:active, 
 .content__card-link_current {
   background-color: #545050;
 }
 
-.content__card-link:hover .content__video-card-title{
+.content__card-link:hover {
   text-decoration: underline #fff;
-  text-underline-offset: 5px;
-  
 }
 
 .content__card-link:focus {
@@ -308,7 +306,7 @@ ol {
   overflow: hidden;
   white-space: nowrap;
   hyphens: auto;
-  max-width: 100%;
+  max-width: 196px;
 
 }
 
