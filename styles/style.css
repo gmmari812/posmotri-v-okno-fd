@@ -246,17 +246,13 @@ ol {
   flex-direction: column;
   position: relative;
   overflow-y: auto;
-  max-block-size: 298px;
+  block-size: 298px;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.content__list_item {
-  max-block-size: 390px;
 }
 
 .content__list-item:last-child {
